@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yuetwon Melody Chui</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <div class="bg"></div>
+    <header>
+        <a href="./index.html"><h1>Yuetwon Melody Chui</h1></a>
+        <span class="mobile-menu" id="mobile-menu">⋮</span>
+
+        <nav>
+          <ul id="menu">
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./volunteer.html">Volunteer</a></li>
+            <li><a href="./work_experience.html">Work Experience</a></li>
+            <li><a href="./awards.html">Awards</a></li>
+          </ul>
+
+          <ul class="menu_footer" id="menu_footer">
+            <li><a href="https://www.linkedin.com/in/yuetwonmelodychui/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/melody_chui/">Instagram</a></li>
+            <li><a href="https://github.com/ymc8474">GitHub</a></li>
+            <li><a href="mailto:melody.yw.chui@gmail.com">Email</a></li>
+            <li><a href="tel:+171850027630">Phone</a></li>
+            <li><a href="./files/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf">Resume</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="scroll-arrow" id="scroll-arrow">
+          <span class="material-symbols-outlined">stat_minus_1</span>
+        </div>
+
+    <div class="center_name">
+      <h2 id="typewriter"></h2>
+    </div>
+
+    <div class="about_me">
+      <div class="about_img">
+        <img src="./img/introduction/headshot.png" alt="Headshot Photo"/>
+      </div>
+
+      <div class="about_txt">
+        <h2>My Story</h2>
+        <p> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget posuere ex. Duis lacinia blandit mi non mattis. Donec nec massa rutrum, ullamcorper leo vitae, rhoncus arcu. Nunc maximus nibh non est viverra feugiat. Morbi eu turpis a felis pulvinar convallis non in purus. Sed sit amet lorem semper, volutpat elit et, ultrices mauris. Morbi tempus ligula elit, eu imperdiet massa aliquam sit amet. Nullam fringilla, urna nec fermentum tincidunt, turpis ex porta eros, nec hendrerit ligula est sed erat. Suspendisse potenti. In tincidunt, nisi a dignissim faucibus, elit justo vehicula sapien, a varius ipsum enim ac arcu.
+          <br>
+          <br>
+          Morbi felis magna, elementum non maximus tincidunt, molestie sagittis quam. Fusce semper nunc nisl, vitae egestas tortor aliquam venenatis. Ut lacinia eros nulla. Cras eu nibh viverra turpis egestas commodo vitae nec elit. Aliquam vitae lacus auctor, porttitor quam ut, pulvinar ipsum. Aliquam interdum nisl nec gravida maximus. Cras tellus augue, imperdiet sit amet ipsum a, lobortis maximus metus. Proin tristique velit risus, vitae faucibus magna commodo eu. Phasellus gravida, augue sed suscipit pretium, velit metus tincidunt libero, quis finibus ligula diam ut orci. Ut dictum eu risus eu feugiat. Vestibulum ultricies enim at turpis placerat venenatis. Phasellus ornare nisl a finibus eleifend.
+        </p>
+      </div>
+    </div>
+
+    <div class="upcoming_projects">
+      <h2>Upcoming Works</h2>
+        
+      <div class="project1">
+        <div class="project1_txt">
+            <h3>The Dill Pickle Project</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget posuere ex. Duis lacinia blandit mi non mattis. Donec nec massa rutrum, ullamcorper leo vitae, rhoncus arcu. Nunc maximus nibh non est viverra feugiat. Morbi eu turpis a felis pulvinar convallis non in purus. Sed sit amet lorem semper, volutpat elit et, ultrices mauris. Morbi tempus ligula elit, eu imperdiet massa aliquam sit amet. Nullam fringilla, urna nec fermentum tincidunt, turpis ex porta eros, nec hendrerit ligula est sed erat. Suspendisse potenti. In tincidunt, nisi a dignissim faucibus, elit justo vehicula sapien, a varius ipsum enim ac arcu.</p>
+        </div>
+
+        <div class="project1_img1">
+          <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/yuetwonmelodychui/">LinkedIn</a></li>
+          <li>|</li>
+          <li><a href="https://www.instagram.com/melody_chui/">Instagram</a></li>
+          <li>|</li>
+          <li><a href="https://github.com/ymc8474">GitHub</a></li>
+          <li>|</li>
+          <li><a href="mailto:melody.yw.chui@gmail.com">Email</a></li>
+          <li>|</li>
+          <li><a href="tel:+171850027630">Phone</a></li>
+          <li>|</li>
+          <li><a href="./files/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script>
+        var i = 0;
+        var txt = 'Yuetwon Melody Chui'; 
+        var speed = 100;
+
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("typewriter").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+
+        window.onload = typeWriter;
+
+        document.querySelector('.mobile-menu').onclick = function() {
+            document.querySelector('header nav').classList.toggle('show');
+        }
+
+        document.getElementById('scroll-arrow').addEventListener('click', function () {
+          window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', function () {
+          const arrow = document.getElementById('scroll-arrow');
+          const nearBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 100;
+          arrow.style.opacity = nearBottom ? '0' : '0.75';
+        });
+    </script>
+  </body>
+</html>

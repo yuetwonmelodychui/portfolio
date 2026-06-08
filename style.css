@@ -1,0 +1,836 @@
+/* --- FONTS --- */
+
+/* Signature: Sacramento */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/* Titles: DM Serif Display */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* Subtitles: Space Mono */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Main Text: Google Sans */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+/* Buttons: Comfortaa */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+/* --- GLOBAL STYLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+}
+
+body {
+    color: white;
+}
+
+p {
+    font-family: Google Sans, sans-serif;
+}
+
+h2 {
+    font-family: DM Serif Display, serif;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: Space Mono, serif;
+}
+
+.scroll-arrow {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    animation: bounce 1.5s infinite;
+    color: white;
+    opacity: 0.75;
+    transition: opacity 0.4s ease;
+}
+
+.scroll-arrow .material-symbols-outlined {
+    font-size: 36px;
+}
+
+/* Background */
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./img/backgrounds/black_satin_sheets.jpeg');
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.header_content {
+    position: relative;
+    z-index: 2;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    font-family: Sacramento, cursive;
+    transition: top 0.2s ease;
+    position: relative;
+    top: 0;
+}
+
+header h1:hover {
+    top: -3px;
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Comfortaa, sans-serif;
+    color: white;
+    padding: 0 20px;
+}
+
+nav a:hover {
+    position: relative;
+    top: -3px;
+    transition: top 0.2s ease;
+}
+
+nav a:active {
+    color: grey;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 0;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+.menu_footer {
+    display: none;
+}
+
+/* --- Introduction Page --- */
+.center_name {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.center_name h2 {
+    font-family: Sacramento, cursive;
+    font-size: 6rem;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.about_img img {
+    width: 400px;
+    height: 400px;
+    border: 15px solid white;
+}
+
+.about_txt h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about_txt p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.upcoming_projects {
+    width: 70%;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.upcoming_projects h2 {
+    margin-bottom: 40px;
+    margin-top: 200px;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project1_txt {
+    width: 450px;
+    text-align: right;
+}
+
+.project1_txt h3 {
+    font-family: Space Mono, serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project1_txt p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.project1_img1 img {
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+    border: 15px solid white;
+}
+
+/* --- Education Page --- */
+.education .bg {
+    background: url('./img/backgrounds/wavy_checkered_background.jpg');
+    background-size: cover;
+    filter: brightness(0.5);
+}
+
+.school {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 5%;
+}
+
+.school h2 {
+    margin-bottom: 5px;
+}
+
+.school h3 {
+    margin: 0;
+}
+
+.school_img {
+    flex-shrink: 0;
+}
+
+.school_img img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.school_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.education p {
+    line-height: 1.7;
+    margin-top: 8px;
+}
+
+.course_grp {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.course {
+    flex: 1;
+    max-width: 450px;
+}
+
+.course p {
+    line-height: 1.7;
+    margin-top: 8px;
+}
+
+.course_pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 460px;
+    height: 350px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    flex-shrink: 0;
+}
+
+.course_pics img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+
+/* --- Projects Page --- */
+.projects .bg {
+    background: url('./img/backgrounds/curly_waves.jpeg');
+    background-size: cover;
+    filter: brightness(0.5);
+}
+
+.projects h3 {
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.project_txt p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.project_txt h2 {
+    margin-bottom: 5px;
+}
+
+.project_txt {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15%;
+    margin-bottom: 30px;
+}
+
+.project_imggrp {
+    text-align: center;
+    padding: 0 15%;
+    padding-bottom: 70px;
+}
+
+.project_imggrp img {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border: 15px solid white;
+}
+
+/* --- Volunteer Page --- */
+.volunteer .bg {
+    background: url(./img/backgrounds/abstract_mountains.jpg);
+    background-size: cover;
+    filter: brightness(0.5);
+}
+
+.volunteer_sector {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.volunteer_sector > h2 {
+    text-align: center;
+}
+ 
+.volunteer_sector > p {
+    margin-bottom: 50px; 
+}
+
+.volunteer_sector > h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.volunteer_sector > div:not(.event_intro) {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.volunteer_sector > div:last-of-type {
+    border-bottom: none;
+}
+
+.event_intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.event_name {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.event_info {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.event_pics {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: scroll;
+    cursor: grab;
+    scrollbar-width: none;
+}
+
+.event_pics img {
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 15px solid white;
+}
+
+/* --- Work Experience Page --- */
+.work_experience .bg {
+    background: url(./img/backgrounds/rain_puddles.jpeg);
+    background-size: 110%;
+    background-position: center;
+    filter: brightness(0.5);
+}
+
+.experience {
+    width: 70%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.experience img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.experience h2 {
+    margin: 20px 0 8px 0;
+}
+
+.experience h3 {
+    margin-bottom: 8px;
+}
+
+.experience p {
+    margin-bottom: 20px;
+}
+
+.experience a {
+    color: white;
+    text-decoration: none;
+}
+
+.experience ul {
+    display: inline-block;
+    text-align: left;
+    font-family: Google Sans, sans-serif;
+    line-height: 1.7;
+}
+
+/* --- Awards Page --- */
+.awards .bg {
+    background: url(./img/backgrounds/paint_dots.jpg);
+    background-size: cover;
+    filter: brightness(0.5);
+}
+
+.award {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 15%;
+}
+
+.award_txt h2 {
+    margin-bottom: 10px;
+}
+
+.award h3 {
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.award p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.award_img {
+    width: 100%;
+    max-height: 55vh;
+    padding-bottom: 70px;
+}
+
+.award_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 15px solid white;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* --- Hamburger Menu --- */
+.mobile-menu {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* --- Phone --- */
+@media screen and (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 1.2rem;
+        right: 1rem;
+        z-index: 300;
+    }
+
+    header {
+        overflow: visible;
+        position: fixed;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.90);
+        padding: 100px 20px;
+        z-index: 200;
+        transition: right 0.3s ease;
+    }
+
+    header nav.show {
+        display: flex;
+        right: 0;
+        z-index: 199;
+    }
+
+    header nav ul#menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav .menu_footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        list-style: none;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .menu_footer {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu_footer li {
+        border-bottom: none;
+    }
+
+    /* --- Global --- */
+    .center_name h2 {
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    footer {
+        display: none;
+    }
+
+    .scroll-arrow {
+        bottom: 20px;
+    }
+
+    /* --- Introduction Page --- */
+    .about_me {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .about_img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .project1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project1_txt {
+        width: 90%;
+        text-align: center;
+        order: 2;
+    }
+
+    .project1_img1 {
+        flex-direction: column-reverse;
+        order: 1;
+    }
+
+    .project1_img1 img {
+        width: 90vw;
+        height: 200px;
+    }
+
+    .upcoming_projects {
+        width: 90%;
+    }
+
+    /* --- Education Page --- */
+    .school {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        text-align: center;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 5%;
+    }
+
+    .school_img img {
+        width: 90vw;
+        height: 250px;
+    }
+
+    .course_grp {
+        flex-direction: column;
+        width: 90%;
+        min-height: unset; 
+        gap: 20px;
+        padding: 60px 5% 80px;
+        margin-bottom: 150px;
+    }
+
+    .course_pics {
+        width: 90vw;
+        height: 250px;
+        justify-content: center;
+    }
+
+    .course_pics img {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* --- Projects Page --- */
+    .projects .bg {
+        background-position: right center;
+    }
+
+    .project_txt {
+        margin-top: 200px;
+    }
+
+    /* --- Volunteer Page --- */
+
+    /* --- Work Experience Page --- */
+    .work_experience .bg {
+        background-size: 170%;
+    }
+
+    .experience ul {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    /* --- Awards Page --- */
+}
+
+/* --- Tablet --- */
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* --- Global --- */
+    header {
+        padding: 0 3%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        padding: 0 10px;
+        white-space: nowrap;
+    }
+
+    .center_name h2 {
+        font-size: 5rem;
+    }
+
+    /* --- Introduction Page --- */
+    .about_me {
+        width: 85%;
+        gap: 30px;
+    }
+
+    .about_img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .upcoming_projects {
+        width: 85%;
+    }
+
+    .project1 {
+        gap: 30px;
+    }
+
+    .project1_txt {
+        width: 40%;
+    }
+
+    .project1_img1 img {
+        width: 400px;
+        height: 220px;
+    }
+
+    /* --- Education Page --- */
+    .school {
+        gap: 30px;
+    }
+
+    .school_img img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .course_grp {
+        width: 90%;
+        gap: 30px;
+    }
+
+    .course_pics {
+        width: 420px;
+    }
+
+    .course_pics img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* --- Projects Page --- */
+    .project_txt {
+        padding: 0 10%;
+    }
+
+    .project_imggrp {
+        margin-bottom: 200px;
+    }
+
+    /* -- Volunteer Page --- */
+    .volunteer_sector {
+        width: 85%;
+    }
+
+    /* --- Work Experience --- */
+    .experience {
+        width: 85%;
+        margin: 700px auto;
+    }
+
+    /* --- Awards Page --- */
+    .award {
+        padding: 0 10%;
+    }
+}
+
+/* --- KEYFRAMES --- */
+#typewriter::after {
+    content: "|";
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+@keyframes bounce {
+    0%, 100% {transform: translateX(-50%) translateY(0);}
+    50% {transform: translateX(-50%) translateY(8px);}
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awards | Yuetwon Melody Chui</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  </head>
+
+  <body class="awards">
+    <div class="bg"></div>
+    <header>
+        <a href="./index.html"><h1>Yuetwon Melody Chui</h1></a>
+        <span class="mobile-menu" id="mobile-menu">⋮</span>
+        
+        <div class="scroll-arrow" id="scroll-arrow">
+          <span class="material-symbols-outlined">stat_minus_1</span>
+        </div>
+
+        <nav>
+          <ul id="menu">
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./volunteer.html">Volunteer</a></li>
+            <li><a href="./work_experience.html">Work Experience</a></li>
+            <li><a href="./awards.html">Awards</a></li>
+          </ul>
+
+          <ul class="menu_footer" id="menu_footer">
+            <li><a href="https://www.linkedin.com/in/yuetwonmelodychui/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/melody_chui/">Instagram</a></li>
+            <li><a href="https://github.com/ymc8474">GitHub</a></li>
+            <li><a href="mailto:melody.yw.chui@gmail.com">Email</a></li>
+            <li><a href="tel:+171850027630">Phone</a></li>
+            <li><a href="./files/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf">Resume</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="center_name">
+      <h2 id="typewriter"></h2>
+    </div>
+
+    <div class="award">
+        <div class="award_txt">
+            <h2>Award Title</h2>
+            <h3>May 20, 2020</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin velit urna, gravida ut dolor sed, malesuada dapibus leo.</p>
+        </div>
+        
+        <div class="award_img">
+          <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        </div>
+    </div>
+
+    <div class="award">
+        <div class="award_txt">
+            <h2>Award Title</h2>
+            <h3>April 20, 2021</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin velit urna, gravida ut dolor sed, malesuada dapibus leo.</p>
+        </div>
+        
+        <div class="award_img">
+          <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        </div>
+    </div>
+
+    <div class="award">
+        <div class="award_txt">
+            <h2>Award Title</h2>
+            <h3>March 23, 2019</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin velit urna, gravida ut dolor sed, malesuada dapibus leo.</p>
+        </div>
+        
+        <div class="award_img">
+          <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        </div>
+    </div>
+
+    <div class="award">
+        <div class="award_txt">
+            <h2>Award Title</h2>
+            <h3>September 04, 2018</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin velit urna, gravida ut dolor sed, malesuada dapibus leo.</p>
+        </div>
+        
+        <div class="award_img">
+          <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        </div>
+    </div>
+
+    <div class="award">
+        <div class="award_txt">
+            <h2>Award Title</h2>
+            <h3>October 08, 2021</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin velit urna, gravida ut dolor sed, malesuada dapibus leo.</p>
+        </div>
+        
+        <div class="award_img">
+          <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/yuetwonmelodychui/">LinkedIn</a></li>
+          <li>|</li>
+          <li><a href="https://www.instagram.com/melody_chui/">Instagram</a></li>
+          <li>|</li>
+          <li><a href="https://github.com/ymc8474">GitHub</a></li>
+          <li>|</li>
+          <li><a href="mailto:melody.yw.chui@gmail.com">Email</a></li>
+          <li>|</li>
+          <li><a href="tel:+171850027630">Phone</a></li>
+          <li>|</li>
+          <li><a href="./files/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf">Resume</a></li>
+        </ul>
+      </nav>
+
+        <script>
+            var i = 0;
+            var txt = 'Awards';
+            var speed = 100;
+
+            function typeWriter() {
+                if (i < txt.length) {
+                document.getElementById("typewriter").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+                } else {
+                setTimeout(resetWriter, 3000);
+                }
+            }
+
+            function resetWriter() {
+                document.getElementById("typewriter").innerHTML = "";
+                i = 0;
+                typeWriter();
+            }
+
+            window.onload = typeWriter;
+
+            document.querySelector('.mobile-menu').onclick = function () {
+                document.querySelector('header nav').classList.toggle('show');
+            }
+
+            document.getElementById('scroll-arrow').addEventListener('click', function () {
+              window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+            });
+
+            window.addEventListener('scroll', function () {
+              const arrow = document.getElementById('scroll-arrow');
+              const nearBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 100;
+              arrow.style.opacity = nearBottom ? '0' : '0.75';
+            });
+        </script>
+    </footer> 
+  </body>
+</html>
