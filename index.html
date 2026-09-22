@@ -8,117 +8,156 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
   </head>
 
-  <body>
+  <body data-bg="train">
     <div class="bg"></div>
-    <header>
-        <a href="./index.html"><h1>Yuetwon Melody Chui</h1></a>
-        <span class="mobile-menu" id="mobile-menu">⋮</span>
+    <div id="site-header"></div>
 
-        <nav>
-          <ul id="menu">
-            <li><a href="./education.html">Education</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./volunteer.html">Volunteer</a></li>
-            <li><a href="./work_experience.html">Work Experience</a></li>
-            <li><a href="./awards.html">Awards</a></li>
-          </ul>
+    <section class="hero" data-spy="Boarding">
+      <div class="ticket" id="ticket">
+        <div class="ticket-glare" aria-hidden="true"></div>
 
-          <ul class="menu_footer" id="menu_footer">
-            <li><a href="https://www.linkedin.com/in/yuetwonmelodychui/">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/melody_chui/">Instagram</a></li>
-            <li><a href="https://github.com/ymc8474">GitHub</a></li>
-            <li><a href="mailto:melody.yw.chui@gmail.com">Email</a></li>
-            <li><a href="tel:+171850027630">Phone</a></li>
-            <li><a href="./files/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf">Resume</a></li>
-          </ul>
-        </nav>
-    </header>
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="tk-label">Boarding Pass</span>
+            <span class="tk-label">No. 2006</span>
+          </div>
 
-    <div class="scroll-arrow" id="scroll-arrow">
-          <span class="material-symbols-outlined">stat_minus_1</span>
+          <div class="ticket-route" aria-label="Route: Hong Kong, Los Angeles, Taiwan, New York">
+            <div class="tk-track" aria-hidden="true">
+              <span class="tk-line"></span>
+              <span class="tk-progress"></span>
+              <span class="material-symbols-outlined tk-plane">flight</span>
+            </div>
+            <div class="tk-stop tk-s1">
+              <span class="tk-city">HKG</span>
+              <span class="tk-dot"></span>
+              <span class="tk-sub">Hong Kong</span>
+            </div>
+            <div class="tk-stop tk-s2">
+              <span class="tk-city">LAX</span>
+              <span class="tk-dot"></span>
+              <span class="tk-sub">Los Angeles</span>
+            </div>
+            <div class="tk-stop tk-s3">
+              <span class="tk-city">TPE</span>
+              <span class="tk-dot"></span>
+              <span class="tk-sub">Taiwan</span>
+            </div>
+            <div class="tk-stop tk-s4">
+              <span class="tk-city">NYC</span>
+              <span class="tk-dot"></span>
+              <span class="tk-sub">New York</span>
+            </div>
+          </div>
+
+          <div class="ticket-passenger">
+            <span class="tk-field-label">Passenger</span>
+            <h2 id="typewriter" class="tk-name"></h2>
+          </div>
+
+          <div class="ticket-program">
+            <div>
+              <span class="tk-field-label">Program</span>
+              <span class="tk-field-val">B.S. Integrated Design and Media</span>
+            </div>
+            <div>
+              <span class="tk-field-label">Minor</span>
+              <span class="tk-field-val">Technology, Management and Design</span>
+            </div>
+          </div>
+
+          <div class="ticket-progress">
+            <div class="tk-prog-head">
+              <span class="tk-field-label">Journey to graduation</span>
+              <span class="tk-field-val" id="tk-pct">--</span>
+            </div>
+            <div class="tk-bar"><span class="tk-bar-fill" id="tk-bar"></span></div>
+            <div class="tk-prog-foot">
+              <span>Jan 2025</span>
+              <span id="tk-flown">--</span>
+              <span>May 2028</span>
+            </div>
+          </div>
+
+          <div class="ticket-barcode">*YUETWON&nbsp;MELODY&nbsp;CHUI*</div>
         </div>
 
-    <div class="center_name">
-      <h2 id="typewriter"></h2>
-    </div>
+        <div class="ticket-perf" aria-hidden="true"></div>
 
-    <div class="about_me">
+        <div class="ticket-stub">
+          <span class="tk-stub-title">Boarding Pass</span>
+          <div class="tk-stub-fields">
+            <div><span class="tk-field-label">Boarded</span><span class="tk-field-val">JAN 2025</span></div>
+            <div><span class="tk-field-label">Arrives</span><span class="tk-field-val">MAY 2028</span></div>
+            <div><span class="tk-field-label">Terminal</span><span class="tk-field-val tk-terminal">NYU TANDON SCHOOL OF ENGINEERING</span></div>
+            <div><span class="tk-field-label">Status</span><span class="tk-field-val tk-status"><i class="tk-live"></i>IN FLIGHT</span></div>
+          </div>
+          <div class="tk-stub-barcode">*MELODY*</div>
+          <div class="tk-stamp" role="img" aria-label="New York University, class of 2028">
+            <svg class="tk-stamp-ring" viewBox="0 0 100 100" aria-hidden="true">
+              <defs><path id="stampCircle" d="M50 50m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0"/></defs>
+              <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="0.8"/>
+              <circle cx="50" cy="50" r="27" fill="none" stroke="currentColor" stroke-width="0.6"/>
+              <text font-size="7.4" letter-spacing="0.4" fill="currentColor">
+                <textPath href="#stampCircle" textLength="228" lengthAdjust="spacing">NEW YORK UNIVERSITY &middot; CLASS OF 2028 &middot;</textPath>
+              </text>
+            </svg>
+            <span class="tk-stamp-core">NYU<br>2028</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero-hint">hover the ticket · scroll to explore</p>
+    </section>
+
+    <section class="about_me" data-spy="About">
       <div class="about_img">
-        <img src="./img/introduction/headshot.png" alt="Headshot Photo"/>
+        <img src="./sections/home/files/headshot.png" alt="Headshot Photo"/>
       </div>
 
       <div class="about_txt">
         <h2>My Story</h2>
-        <p> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget posuere ex. Duis lacinia blandit mi non mattis. Donec nec massa rutrum, ullamcorper leo vitae, rhoncus arcu. Nunc maximus nibh non est viverra feugiat. Morbi eu turpis a felis pulvinar convallis non in purus. Sed sit amet lorem semper, volutpat elit et, ultrices mauris. Morbi tempus ligula elit, eu imperdiet massa aliquam sit amet. Nullam fringilla, urna nec fermentum tincidunt, turpis ex porta eros, nec hendrerit ligula est sed erat. Suspendisse potenti. In tincidunt, nisi a dignissim faucibus, elit justo vehicula sapien, a varius ipsum enim ac arcu.
+        <p>
+          [Write your story here, in your own voice. A few facts to weave in if useful: grew up in Taiwan at IBSH, bilingual in Cantonese, English, and Mandarin; now a B.S. Integrated Design and Media student at NYU Tandon (minor in Technology, Management and Design), class of 2028; background spans robotics (IBSH Robotics Team &amp; Club President), research internships (synchrotron crystallography, self-driving car sensor work), design (web design for AURA by Nisha, MUN layout design), and years of volunteer teaching and community service.]
           <br>
           <br>
-          Morbi felis magna, elementum non maximus tincidunt, molestie sagittis quam. Fusce semper nunc nisl, vitae egestas tortor aliquam venenatis. Ut lacinia eros nulla. Cras eu nibh viverra turpis egestas commodo vitae nec elit. Aliquam vitae lacus auctor, porttitor quam ut, pulvinar ipsum. Aliquam interdum nisl nec gravida maximus. Cras tellus augue, imperdiet sit amet ipsum a, lobortis maximus metus. Proin tristique velit risus, vitae faucibus magna commodo eu. Phasellus gravida, augue sed suscipit pretium, velit metus tincidunt libero, quis finibus ligula diam ut orci. Ut dictum eu risus eu feugiat. Vestibulum ultricies enim at turpis placerat venenatis. Phasellus ornare nisl a finibus eleifend.
+          [Second paragraph — what drives your design work, what you're exploring at NYU, what you want to make next.]
         </p>
+        <p class="languages">Languages: English &middot; Mandarin Chinese &middot; Cantonese</p>
+        <p class="languages">Hobbies: cooking &amp; baking (since age 7) &middot; swimming &middot; sketchbook architecture/interior design &middot; NFT art &middot; film &amp; photography editing</p>
       </div>
-    </div>
+    </section>
 
-    <div class="upcoming_projects">
+    <section class="photoshoot gallery-neon" id="photoshoot" data-spy="Photoshoot">
+      <h2>Personal Photoshoot</h2>
+      <p class="section-note">New shoot still in progress &mdash; placeholder gallery below until the final photos are ready.</p>
+      <div class="photoshoot_grid">
+        <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+        <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
+      </div>
+    </section>
+
+    <section class="upcoming_projects" id="upcoming" data-spy="Upcoming Works">
       <h2>Upcoming Works</h2>
-        
+
       <div class="project1">
         <div class="project1_txt">
             <h3>The Dill Pickle Project</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget posuere ex. Duis lacinia blandit mi non mattis. Donec nec massa rutrum, ullamcorper leo vitae, rhoncus arcu. Nunc maximus nibh non est viverra feugiat. Morbi eu turpis a felis pulvinar convallis non in purus. Sed sit amet lorem semper, volutpat elit et, ultrices mauris. Morbi tempus ligula elit, eu imperdiet massa aliquam sit amet. Nullam fringilla, urna nec fermentum tincidunt, turpis ex porta eros, nec hendrerit ligula est sed erat. Suspendisse potenti. In tincidunt, nisi a dignissim faucibus, elit justo vehicula sapien, a varius ipsum enim ac arcu.</p>
+            <p>[Add a description of this upcoming project — what it is and when it's launching.]</p>
         </div>
 
         <div class="project1_img1">
           <img src="./img/placeholder.jpg" alt="PLACEHOLDER IMAGE"/>
         </div>
       </div>
-    </div>
+    </section>
 
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/yuetwonmelodychui/">LinkedIn</a></li>
-          <li>|</li>
-          <li><a href="https://www.instagram.com/melody_chui/">Instagram</a></li>
-          <li>|</li>
-          <li><a href="https://github.com/ymc8474">GitHub</a></li>
-          <li>|</li>
-          <li><a href="mailto:melody.yw.chui@gmail.com">Email</a></li>
-          <li>|</li>
-          <li><a href="tel:+171850027630">Phone</a></li>
-          <li>|</li>
-          <li><a href="./files/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf">Resume</a></li>
-        </ul>
-      </nav>
-    </footer>
+    <div id="site-footer"></div>
 
-    <script>
-        var i = 0;
-        var txt = 'Yuetwon Melody Chui'; 
-        var speed = 100;
-
-        function typeWriter() {
-          if (i < txt.length) {
-            document.getElementById("typewriter").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-          }
-        }
-
-        window.onload = typeWriter;
-
-        document.querySelector('.mobile-menu').onclick = function() {
-            document.querySelector('header nav').classList.toggle('show');
-        }
-
-        document.getElementById('scroll-arrow').addEventListener('click', function () {
-          window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
-        });
-
-        window.addEventListener('scroll', function () {
-          const arrow = document.getElementById('scroll-arrow');
-          const nearBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 100;
-          arrow.style.opacity = nearBottom ? '0' : '0.75';
-        });
-    </script>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>
