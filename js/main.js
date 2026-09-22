@@ -56,7 +56,7 @@ const CONTACT_LINKS = [
   { label: 'Handshake', href: 'https://app.joinhandshake.com/profiles/ymc8474' },
   { label: 'Email', href: 'mailto:melody.yw.chui@gmail.com' },
   { label: 'Phone', href: 'tel:+17185002763' },
-  { label: 'Resume', href: "./sections/contact/files/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf" },
+  { label: 'Resume', href: "./sections/contact/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf" },
 ];
 
 function currentPage() {
@@ -118,7 +118,7 @@ function renderChrome() {
         <ul class="footer-links">
           <li><a href="mailto:melody.yw.chui@gmail.com">Email</a></li>
           <li><a href="tel:+17185002763">Phone</a></li>
-          <li><a href="./sections/contact/files/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf">Resume</a></li>
+          <li><a href="./sections/contact/Yuetwon Melody Chui's University Resume (IDM | updated on 03.11.2026).pdf">Resume</a></li>
         </ul>
       </footer>`;
   }
